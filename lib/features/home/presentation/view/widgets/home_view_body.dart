@@ -1,4 +1,6 @@
+import 'package:bookyapp/core/utils/styles.dart';
 import 'package:bookyapp/features/home/presentation/view/widgets/custom_app_body.dart';
+import 'package:bookyapp/features/home/presentation/view/widgets/feature_list_view.dart';
 import 'package:flutter/material.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -6,6 +8,17 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(children: [CustomAppBar()]);
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          CustomAppBar(),
+          FeaturerBooksListView(),
+          SizedBox(height: 50),
+          Text("Best Seller", style: Styles.titleMedim),
+        ],
+      ),
+    );
   }
 }
