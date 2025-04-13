@@ -1,4 +1,5 @@
 import 'package:bookyapp/constantes.dart';
+import 'package:bookyapp/core/utils/assets.dart';
 import 'package:bookyapp/features/splash/presentation/views/splashview.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
